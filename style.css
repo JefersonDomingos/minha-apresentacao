@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap'); /*FONTE IMPORTADA*/
+*{
+    margin:0; /*pagina toda sem margem PADRÃO*/
+    padding:0;/*pagina toda sem padding PADRÃO*/
+    box-sizing: border-box; /*NÃO ultrapassar o limite da Página*/
+    text-decoration: none; /*TODOS os textos da pagina sem decoração*/
+}
+
+body{ /*CORPO DA PAGINA*/
+    font-size:100%; /*Tamanho da fonte*/
+    background: linear-gradient(#89e5df,#89d1ff 100%); /*background em Degradê*/
+    
+}
+
+.cabecalho{ /*USANDO FLEX-BOX*/
+    display:flex; /*DISPLAY FLEXIVEL um elemento PODE FICAR AO LADO DO outro*/
+    flex-direction: row; /*preencher EM DIREÇÃO DE LINHA (horizontal)*/
+    align-items: center; /*ALINHAR itens AO CENTRO*/
+    justify-content: space-around; /*DIVIDIR OS espaços da tela para os elementos e DEIXAR margem a esquerda e a direita*/
+    padding:24px; /*ESPAÇO interno PARA TODAS AS direções*/
+
+
+}
+
+.logo{
+   
+    height:72px; /*COLOCANDO A ALTURA (height) a LARGURA (width) SE ajusta AUTOMATICAMENTE*/
+    border-radius: 50%; /*DEIXA NO FORMATO ARREDONDADO NESSE CASO 50% faz um circulo*/
+    border: 0.5px solid red;  /*BORDA COMPLETA DO ELEMENTO*/
+    transition: 500ms ; /*FAZER ALGUMA MUDANÇA EM ATE 500 millisegundos*/
+   
+}
+
+.logo:hover{ /*QUANDO PASSAR O MOUSE*/
+    transform:scale(1.1);  /*AUMENTAR TAMANHO (CRIANDO ANIMAÇÃO junto com o  transition: 500ms (QUE ESTÁ ANTES DO MOUSE )*/
+
+}
+
+.cabecalho-navegacao{ /*tag <nav>*/
+    display: flex; /*DISPLAY FLEXIVEL um elemento PODE FICAR AO LADO DO outro*/
+    gap:32px; /*DEFINE O espaço entra os itens*/
+    font-family: 'Inter', sans-serif; /*TIPO DA FONTE (nesse caso importei no goolge fonts)*/
+    color:#000000;/*COR DA FONTE*/
+    font-weight: 400; /*PESO DA FONTE*/
+    font-size: 18px; /*tamanho da fonte*/
+
+}
+
+.cabecalho-item{
+    color:#000000; /*COR DA FONTE*/
+
+}
+
+.cabecalho-item:hover{ /*QUANDO PASSAR O MOUSE*/
+    transform: scale(1.3); /*VAI AUMENTAR O TAMANHO NESSA ESCALA*/
+    text-decoration: underline; /*VAI VOLTAR COM A DECORAÇÃO DO SUBLINHADO*/
+}
+
+.principal{/*tag <main>*/
+    border-top:0.4px solid #FFF2E7; /*BORDA DO TOPO DO ELEMENTO (fazendo uma linha)*/
+    margin-bottom: 40px;/*MARGEM externa DE BAIXO*/
+}
+
+
+.principal-sessao-um{
+    display:flex; /*PERMITE UM elemento ao lado do outro*/
+    flex-direction: row; /*DIREÇAÕ EM LINHA (HORIZONTAL)*/
+    align-items: center; /*CENTRALIZAR ITENS (esse alinhamento agora é na VERTICAL)*/
+    justify-content: space-around; /*DIVIDIR OS espaços da tela para os elementos e DEIXAR margem a esquerda e a direita*/
+
+
+}
+
+
+
+.div-sessao-um{
+    display:flex; /*PERMITE UM elemento ao lado do outro*/
+    flex-direction: column; /*DIREÇAÕ EM coluna (VERTICAL)*/
+    gap:32px; /*DEFINE O espaço entra os itens*/ 
+
+}
+
+.foto-sessao-um{
+    width:200px; /*LARGURA*/
+    height:200px; /*ALTURA*/
+    border-radius: 10px; /*ARREDONDAR*/
+    box-shadow: 10px 10px 10px #000000; /*colocar sombra 10px no EIXO (X) , 10px no EIXO(Y) e degradê de 10px*/
+    transition: 500ms; /*TEMPO DA TRANSIÇÃO*/
+  
+}
+
+.foto-sessao-um:hover{ /*QUANDO PASSAR O MOUSE*/
+    transform:scale(1.1)/*AUMENTAR A ESCALA DO TAMANHO*/
+}
+
+.titulo-sessao-um{
+    font-family: 'Inter', sans-serif; /*TIPO DA FONTE (nesse caso importei no goolge fonts)*/
+    font-weight: 400; /*PESO DA FONTE*/
+    font-size:64px; /*TAMANHO DA FONTE*/
+    color:#000000; /*COR DA FONTE*/
+}
+
+.subtitulo-sessao-um{
+    font-family: 'Inter', sans-serif; /*TIPO DA FONTE (nesse caso importei no goolge fonts)*/
+    font-weight: 400; /*PESO DA FONTE*/
+    font-size:24px; /*TAMANHO DA FONTE*/
+    color:#000000; /*COR DA FONTE*/
+
+}
+
+.botao-sessao-um{
+    background-color:#000000; /*COR DE FUNDO do botão*/
+    width: 180px; /*LARGURA*/
+    height:64px; /*ALTURA*/
+    border:none; /*RETIRAR borda*/
+    border-radius:10px; /*vai arredondar os cantos*/
+    font-family: 'Inter', sans-serif; /*TIPO DA FONTE (nesse caso importei no goolge fonts)*/
+    font-size: 20px; /*TAMANHO DA FONTE*/
+    color:#FFFFFF; /*COR DA FONTE*/
+    box-shadow: 4px 5px 4px rgba(0,0,0,0.70); /*sombra*/
+    transition: 500ms ; /*FAZER ALGUMA MUDANÇA EM ATE 500 millisegundos*/
+
+}
+
+.botao-sessao-um:hover{ /*QUANDO PASSAR O MOUSE*/
+   transform:scale(1.1);  /*AUMENTAR TAMANHO (CRIANDO ANIMAÇÃO junto com o  transition: 500ms (QUE ESTÁ ANTES DO MOUSE )*/
+    
+}
+
+.principal-sessao-dois{
+    border-top:0.4px solid #FFF2E7; /*BORDA DO TOPO DO ELEMENTO (fazendo uma linha)*/
+    display:flex; /*PERMITE UM elemento ao lado do outro*/
+    flex-direction: column; /*DIREÇAÕ EM coluna (VERTICAL)*/
+    align-items: center; /*ALINHAR ITENS AO CENTRO DA COLUNA(esse alinhamento agora é na ORIZONTAL)*/
+    gap:24px; /*ESPAÇAMENTO ENTRE OS ITENS*/
+    margin-top: 48px; /*MARGEM EXTRENA DE CIMA */
+}
+
+.subtitulo-sessao-dois{
+  
+    padding-top: 40px ;/*DISTANCIA DA BORDA DO proprio ELEMENTO (MARGEM INTERNA)*/
+    font-family: 'Inter', sans-serif; /*TIPO DA FONTE (nesse caso importei no goolge fonts)*/
+    font-weight: bold; /*PESO DA FONTE (bold SIGNIFICA negrito*/
+    font-size:24px; /*TAMANHO DA FONTE*/
+    color:#000000; /*COR DA FONTE*/
+    margin-bottom: 18px; /*MARGEM externa DE BAIXO*/
+
+}
+
+.paragrafo-sessao-dois{
+    font-family: 'Inter', sans-serif; /*TIPO DA FONTE (nesse caso importei no goolge fonts)*/
+    font-weight: 300px; /*PESO DA FONTE */
+    font-size:18px; /*TAMANHO DA FONTE*/
+
+}
+
+.rodape{
+    display:flex;
+    flex-direction: column;
+    gap: 40px;
+    border-top:0.4px solid #FFF2E7; /*BORDA DO TOPO DO ELEMENTO (fazendo uma linha)*/
+    padding:40px; /*DISTANCIA DA BORDA DO proprio ELEMENTO (MARGEM INTERNA)*/
+    text-align: center; /*ALINHAR TEXTOS QUE ESTÃO DENTRO DO RODAPÉ AO CENTRO*/
+
+
+}
+
+.rodape-subtitulo{
+    font-family: 'Inter', sans-serif; /*TIPO DA FONTE (nesse caso importei no goolge fonts)*/
+    font-weight: 400; /*PESO DA FONTE*/
+    font-size:34px; /*TAMANHO DA FONTE*/
+    color:#000000; /*COR DA FONTE*/
+   
+/*///////////////////// CENTRALIZAR ALGUNS ELEMENTOS//////////////////////////////////////
+
+    display:block; PARA OCUPAR TODA A LARGURA (não permite ITENS AO SEU LADO)
+    margin:0 auto; NESSE CASO A MARGEM DA direita e a da esquerda estão automáticas fazendo cnetralizar itens
+    /////////////////////////////////////////////////////////////////////////////////////////////*/
+}
+
+.contatos{
+    display:flex; /*PERMITE UM ITEM AO LADO DO OUTRO*/
+    align-items: center; /*CENTRALIZAR ITENS (na posição VERTICAL)*/
+    margin-left: auto; /*A <div> vai ficar centralizada com (margin-left: auto;  e margin-right: auto;) */
+    margin-right: auto; /*A <div> vai ficar centralizada com (margin-left: auto;  e margin-right: auto;) */
+}
+
+
+.meu-linkedin{ /*LOGO do linkedin*/
+    width:100px; /*largura*/
+    display:inline-block;/*PERMITE elementos ao lado*/
+
+}
+
+.github{ /*logo do GITHUB*/
+    height:50px;
+    margin-left: 20px;
+}
+
+.creditos{
+    color:#000000; /*COR DA FONTE*/
+    display:block; /*COLOQUEI ESSE DISPLAY POIS OS LINKS <a> são inline apenas (e por isso não aceitam margem)*/
+  
+   
+}
+
+
