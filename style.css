@@ -197,11 +197,5 @@ body{ /*CORPO DA PAGINA*/
     margin-left: 20px;
 }
 
-.creditos{
-    color:#000000; /*COR DA FONTE*/
-    display:block; /*COLOQUEI ESSE DISPLAY POIS OS LINKS <a> são inline apenas (e por isso não aceitam margem)*/
-  
-   
-}
 
 
