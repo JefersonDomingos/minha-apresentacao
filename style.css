@@ -197,7 +197,7 @@ body{ /*CORPO DA PAGINA*/
     margin-left: 20px;
 }
 
-@media screen and(max-width:480px){
+@media screen and (max-width:480px){
 .cabecalho{ /*USANDO FLEX-BOX*/
 
     display:flex; /*DISPLAY FLEXIVEL um elemento PODE FICAR AO LADO DO outro*/
