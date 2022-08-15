@@ -200,6 +200,7 @@ body{ /*CORPO DA PAGINA*/
 @media screen and (max-width:480px){
 .cabecalho{ /*USANDO FLEX-BOX*/
 
+
     display:flex; /*DISPLAY FLEXIVEL um elemento PODE FICAR AO LADO DO outro*/
 
     flex-direction: row; /*preencher EM DIREÇÃO DE LINHA (horizontal)*/
@@ -210,7 +211,7 @@ body{ /*CORPO DA PAGINA*/
 
     padding:24px; /*ESPAÇO interno PARA TODAS AS direções*/
 
-
+    background-color:red;
 
 
 
